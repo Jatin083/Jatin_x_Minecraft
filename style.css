@@ -1,0 +1,175 @@
+/* Apply Montserrat font to the body */
+@import url(explore/Minecraft.ttf);
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('explore/Minecraft.ttf') format('truetype');
+}
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.scroll-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.wrapper img {
+    height: 70vh;
+    /* Reduced height for images */
+    width: 24vw;
+    /* Fixed width for images */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Button Styles */
+.scroll-buttons button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-buttons img {
+    height: 40px;
+    /* Adjust button icon height */
+    width: auto;
+    transform: rotate(0deg);
+    /* Rotate left arrow icon */
+}
+
+#scroll-left img {
+    transform: rotate(180deg);
+    /* Rotate left arrow icon */
+}
+
+body {
+    color: #404040;
+}
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+h2 {
+    font-family: 'Minecraft', sans-serif; /* fallback to sans-serif if the font fails to load */
+}
+.platform{
+    font-family: 'Minecraft', sans-serif;
+}
+
+
+/* Apply Pixelify Sans font to headings */
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Apply Roboto font to paragraphs */
+p {
+    font-family: 'Roboto', sans-serif;
+}
+.Modes h1{
+    font-weight: 1300;
+}
+.hgreen:hover{
+    border: 4px solid rgb(39, 215, 39);
+cursor: pointer;
+}
+#container3D canvas{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.column {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    width: 100%;
+    height: 5vw;
+    background-color: #ff6a00;
+    opacity: 0;
+}
+
+.bg-\[\#9979cf\] {
+    filter: blur(1px);
+    --tw-bg-opacity: 1;
+    background-color: rgb(153 121 207 / var(--tw-bg-opacity));
+}
+/* Apply different font weights */
+.bold-text {
+    font-weight: 700; /* This will apply a bold weight if available */
+}
+
+.light-text {
+    font-weight: 300; /* This will apply a light weight if available */
+}
+
+/* Italic style example */
+.italic-text {
+    font-style: italic;
+}
+/* Use Montserrat for navigation links */
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* Use Pixelify Sans for a retro-styled button */
+button {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Use Roboto for the main content area */
+.main-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
